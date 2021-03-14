@@ -1,0 +1,14 @@
+{
+  "name": "landing-vitek",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch sass --o css --output-style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

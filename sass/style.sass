@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap')
+
+$fontfamily: 'Open Sans', sans-serif
+$color1: rgba(99,122,177,1)
+$backgroundGray: #ddd
+
+body
+    margin: 0
+    padding: 0
+    font-family: $fontfamily
+
+a
+    color: $color1
+    text-decoration: none
+
+    &:hover
+        text-decoration: underline
+
+// components
+
+.button
+    background-color: $color1
+    color: rgba(255,255,255,.9)
+    border: none
+    padding: 10px 20px
+    text-decoration: none
+    border-radius: 4px
+    transition: .4s
+
+    &:hover
+        box-shadow: 0 0 10px rgba(0,0,0,.3)
+        color: rgba(255,255,255,1)
+        background-color: rgba(99,122,177,.8)
+
+.heading
+    font-size: 32px
+    color: rgba(99,122,177,1)
+
+.space-50
+    height: 50px
+// components end
+
+.header
+    width: 100%
+    position: fixed    
+    background: rgba(255,255,255,.8)
+    height: 100px
+    margin: 0 auto
+    backdrop-filter: blur(3px)
+    z-index: 1000
+    box-shadow: 0 0 16px rgba(0, 0, 0,.1)
+
+    &-wrapper
+        display: flex
+        width: 1260px
+        margin: 0 auto
+        justify-content: space-between
+        height: 100px
+        align-items: center
+
+    &-menu
+        display: inline-flex
+        list-style: none
+        padding: 0
+        margin: 0
+
+        & li
+            margin-right: 15px
+
+            a
+                color: #000
+                text-decoration: none
+                font-weight: bold
+
+                &:hover
+                    color: $color1
+
+            &:last-child
+                margin-right: 0
+
+.logo
+    width: 200px
+
+.preview
+    height: 100vh
+    width: 100%
+    background-image: url(../images/preview.webp)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    padding-top: 100px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    &-bg
+        width: 100%
+        height: 100%
+        position: absolute
+        background-color: rgba(0,0,0,.7)
+        z-index: 99
+
+    &-preheader
+        font-size: 20px
+        color: #fff
+        padding: 10px
+        z-index: 999
+
+    &-header
+        font-size: 32px
+        font-weight: bold
+        color: #fff
+        padding: 20px
+        margin: 20px 0
+        z-index: 999
+
+    &-text
+        font-size: 18px
+        color: #fff
+        padding: 10px
+        max-width: 940px
+        margin: 20px 0 0 0
+        z-index: 999
+
+.about
+    width: 100%
+    background-color: #fff
+    color: #000
+    font-size: 18px
+    padding: 150px 0
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.partner
+    display: flex
+    flex-direction: column
+    background-color: $backgroundGray
+    padding: 150px 0
+    justify-content: center
+    align-items: center
+
+    &-text
+        font-size: 18px
+        max-width: 450px
+
+    &-list
+        display: flex
+        flex-direction: column
+        max-width: 940px
+        margin-top: 50px
+
+    &-item
+        display: flex
+        flex-direction: row        
+        max-width: 500px
+        margin-bottom: 20px
+
+        &:last-child
+            margin-bottom: 0
+
+    &-image
+        img
+            width: 220px
+            margin-right: 20px
+
+    &-description
+        font-size: 16px
+
+        h3
+            color: $color1
+            margin: 15px 0
+
+.skill
+    &-header
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        height: 400px
+        background-image: url(https://thumb.tildacdn.com/tild3437-6430-4631-b136-356632306131/-/format/webp/__1.png)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
+
+        .heading
+            z-index: 999
+        p
+            color: #fff
+            z-index: 999
+
+    &-bg
+        width: 100%
+        height: 400px
+        background: rgba(0,0,0,.75)
+        position: absolute
+        z-index: 99
+    &-body
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    &-list
+        display: flex
+        flex-direction: row
+        max-width: 940px
+        flex-wrap: wrap
+        margin-top: 40px
+
+    &-item
+        width: 50%
+        display: flex
+        flex-direction: row
+        margin-bottom: 30px        
+
+    &-logo
+        width: 45px
+        img
+            width: 45px            
+
+    &-descriptiom
+        width: calc(100% - 60px)
+        margin-left: 15px
+
+        h3
+            color: $color1
+            margin-top: 0
+
+.special
+    display: flex
+    flex-direction: column
+    background-image: url(https://thumb.tildacdn.com/tild3265-3032-4436-b335-306133623939/-/format/webp/_.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    height: 100vh
+    justify-content: center
+    align-items: center
+
+    .heading
+        z-index: 999
+
+    &-bg
+        width: 100%
+        height: 100vh
+        background: rgba(0,0,0,.75)
+        position: absolute
+        z-index: 99
+    &-text
+        z-index: 999
+        color: #fff
+        max-width: 600px
+        margin-bottom: 50px
+
+    &-block
+        z-index: 999
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        width: 940px
+
+    &-item
+        z-index: 999
+        width: calc( 33% - 20px )
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column      
+        margin-right: 20px
+
+    &-header
+        z-index: 999
+        color: $color1
+        border-bottom: 1px solid rgba(255,255,255,.4)
+        padding-bottom: 40px
+        width: 100%
+        justify-content: center
+        font-size: 62px
+        font-weight: bold
+        display: flex
+
+    &-bottom
+        color: #fff
+        padding-top: 40px
+        z-index: 999
+        height: 50px
+
+.service
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 150px 0
+
+    
+.contact
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    height: 600px
+    &-left
+        width: 50%
+
+    &-right
+        width: 50%
+        padding-left: 50px
+        display: flex     
+        flex-direction: column   
+        justify-content: center
+
+    &-text
+        margin: 10px 0
+
+    &-phone
+        margin: 10px 0
+
+    &-email
+        margin: 10px 0
+
+    &-graphic
+        margin: 10px 0
+
+
+footer
+    background-color: #0f0f0f
+    display: flex
+    height: 100px
+    justify-content: center
+    align-items: center
+    color: #fff
